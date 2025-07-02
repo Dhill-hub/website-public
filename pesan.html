@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pemesanan Tiket – PT. Tuah Nagari Trans</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Pemesanan Tiket Travel</h1>
+    <p>Isi formulir berikut untuk melakukan pemesanan</p>
+  </header>
+
+  <nav class="menu-horizontal">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="about.html">Tentang Kami</a></li>
+      <li><a href="pesan.html">Pesan Tiket</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-container">
+    <div class="left-column" style="width: 100%;">
+      <h2>Form Pemesanan Tiket</h2>
+      <form class="form-pesan" onsubmit="return kirimWA()">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" required><br><br>
+
+        <label for="tujuan">Tujuan:</label><br>
+        <select id="tujuan" required>
+          <option value="Pekanbaru">Lintau - Pekanbaru</option>
+          <option value="Batam">Lintau - Batam</option>
+          <option value="Buton">Lintau - Buton</option>
+          <option value="Tanjung Balai Karimun">Lintau - Tanjung Balai Karimun</option>
+        </select><br><br>
+
+        <label for="tanggal">Tanggal Berangkat:</label><br>
+        <input type="date" id="tanggal" required><br><br>
+
+        <label for="jumlah">Jumlah Penumpang:</label><br>
+        <input type="number" id="jumlah" min="1" required><br><br>
+
+        <button type="submit">Kirim Pesanan via WhatsApp</button>
+      </form>
+    </div>
+  </main>
+
+  <section class="widget-row">
+    <div class="widget-box"><a href="harga.html" target="_blank">Harga & Rute</a></div>
+    <div class="widget-box"><a href="galeri.html" target="_blank">Galeri Kendaraan</a></div>
+    <div class="widget-box"><a href="kritik.html" target="_blank">Kritik & Saran</a></div>
+    <div class="widget-box">
+      <a href="https://wa.me/6281350862577" target="_blank">Chat Admin</a>
+    </div>
+  </section>
+
+  <footer>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      &copy; 2025 PT. Tuah Nagari Trans | Pemesanan Tiket Travel | WhatsApp: 
+      <a href="https://wa.me/6281350862577" target="_blank" style="color: yellow;">0813-5086-2577</a>
+    </marquee>
+  </footer>
+
+</body>
+</html>

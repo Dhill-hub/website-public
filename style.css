@@ -1,0 +1,198 @@
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #0a3d62;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Menu Horizontal */
+.menu-horizontal {
+  background-color: #1e6f96;
+}
+
+.menu-horizontal ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-horizontal ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.menu-horizontal ul li a:hover {
+  background-color: #13577d;
+}
+
+/* Konten utama */
+.main-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  flex: 7;
+  background-color: #fef6e4;
+  padding: 20px;
+  border: 2px solid #ffcb77;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.right-column {
+  flex: 3;
+  background-color: #e3f2fd;
+  padding: 20px;
+  border: 2px solid #90caf9;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Widget bawah (4 kolom) */
+.widget-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.widget-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 23%;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.widget-box a {
+  color: #0a3d62;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.widget-box a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.tabel-harga {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabel-harga th,
+.tabel-harga td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabel-harga th {
+  background-color: #0a3d62;
+  color: white;
+}
+
+.tabel-harga tr:hover {
+  background-color: #f1f1f1;
+}
+
+.form-pesan {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.form-pesan input,
+.form-pesan select,
+.form-pesan textarea,
+.form-pesan button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  font-family: Arial, sans-serif;
+}
+
+.form-pesan button {
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-pesan button:hover {
+  background-color: #13577d;
+}
+
+.galeri-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.galeri-container img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.galeri-container img:hover {
+  transform: scale(1.05);
+  border-color: #0a3d62;
+}
